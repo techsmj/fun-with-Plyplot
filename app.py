@@ -1,20 +1,20 @@
 import os
 
 import pandas as pd
-# import numpy as np
+import numpy as np
 
-# import sqlalchemy
+import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
-# from sqlalchemy.orm import Session
-# from sqlalchemy import create_engine
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 # print(os.environ)
 
-# if not os.environ.get("DYNO"):
-#     import config
-#     print(config.name)
+if not os.environ.get("DYNO"):
+    import config
+    print(config.name)
 
 
 if os.environ.get("JAWSDB_URL"):
